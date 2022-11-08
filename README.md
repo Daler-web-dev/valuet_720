@@ -1,4 +1,4 @@
-# gulp_vanila_project
+# Командная работа группы 720
 ## This is a default project for using a gulp every setting ready to work
 
 
