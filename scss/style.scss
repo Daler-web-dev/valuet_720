@@ -3,39 +3,125 @@
     margin: 0px;
     box-sizing: border-box;
 }
-
 body {
-    background-color: red;
+    background: radial-gradient(#20135C 0%, #140739 92.82%);
+    width: 100%;
+    height: 100vh;
 }
 
 header {
-    width: 100%;
-    padding: 20px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    width: 78%;
+    padding: 14px 32px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #c4c4c4;
+    border-bottom: 1px solid #2D317A;
 
-    .left {
+    form {
         display: flex;
         align-items: center;
-        gap: 15px;
-        a {
-            text-decoration: none;
-            color: black;
+        gap: 5px;
+        background-color: #161245;
+        border-radius: 25px;
+        padding: 7px 15px;
+
+        width: 30%;
+        input, button {
+            all: unset;
+            cursor: pointer;
+            color: white;
+        }
+        input {
+            width: 100%;
         }
     }
-    .right {
+    .links {
         display: flex;
         align-items: center;
-        gap: 15px;
-        .round {
-            width: 38px;
-            height: 38px;
-            background-color: gray;
-            &:hover {
-                background-color: orange;
-            }   
-        }
+        gap: 10px;
     }
+
+}   
+
+
+main {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    aside {
+        width: 20%;
+        height: 100vh;
+        background: linear-gradient(rgba(28, 35, 64, 0) 0%, #1C0F54 100%);
+        padding: 20px;
+
+        h1 {
+            color: #3887FE;
+            text-align: center;
+        }
+
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+
+            a {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                padding: 15px 16px;
+                border-bottom: 1px solid #1288E8;
+                background-color: #32395E;
+                border-radius: 6px;
+
+                text-decoration: none;
+                font-size: 18px;
+                color: white;
+            }
+        }
+
+    }
+
+    .content {
+        width: 78%;
+        height: 84%;
+        background-color: red;
+        position: absolute;
+        top: 120px;
+        right: -100%;
+        bottom: 0px;
+        transition: .5s ease;
+    }
+
+    .activePage {
+        right: 0%;
+    }
+
+    #Overview {
+        background-color: green;
+    }
+    #Wallets {
+        background-color: blue;
+    }
+    #Transictions {
+        background-color: pink;
+    }
+    #Exchange {
+        background-color: skyblue;
+    }
+    #Market {
+        background-color: grey;
+    }
+
+
 }
