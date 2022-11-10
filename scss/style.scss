@@ -117,7 +117,156 @@ main {
         background-color: pink;
     }
     #Exchange {
-        background-color: skyblue;
+        p {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+            text-transform: capitalize;
+            font-style: normal;
+            color: #FFFFFF;
+            padding-bottom: 16px;
+        }
+
+        box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        padding: 28px 32px;
+
+        .from {
+            margin-top: 8px;
+            width: 530px;
+            height: 226px;
+            background: linear-gradient(180deg, rgba(27, 18, 78, 0.2) 0%, #0F0B38 93.37%);
+            box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            padding-left: 32px;
+
+
+            .top {
+                display: flex;
+                padding-top: 40px;
+                justify-content: space-between;
+                align-items: center;
+                padding-bottom: 39px;
+
+                .left {
+                    gap: 5px;
+                    display: flex;
+                }
+            }
+
+            #inp {
+                width: 457px;
+                height: 35px;
+                background-color: #32395E;
+                border-radius: 5px;
+                margin-right: 36px;
+            }
+
+            .bit {
+                width: 88px;
+                height: 88px;
+
+            }
+        }
+
+        .box {
+            gap: 25px;
+            display: flex;
+        }
+
+        .bottom {
+            width: 1084px;
+            height: 113px;
+            background: linear-gradient(180deg, rgba(27, 18, 78, 0.2) -153.98%, #0F0B38 140.59%);
+            box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            margin-top: 24px;
+            display: flex;
+            // justify-content: space-between;
+            align-items: center;
+            padding: 39px;
+            padding-left: 217px;
+
+            .strel {
+                // width: 144px;
+
+                margin: 56px;
+                // margin-bottom: 56px;
+                // box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.25);
+            }
+
+            .crug {
+                width: 59px;
+                height: 59px;
+                // background-color: red;
+                border-radius: 50%;
+                border: 2px solid #1190F2;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+                display: flex;
+                align-items: center;
+                padding: 10px;
+
+                .bi {
+                    padding: 7px;
+                }
+            }
+        }
+
+        .btn {
+            all: unset;
+            width: 125px;
+            margin-top: 22px;
+            padding: 8px;
+            // padding-left: 15px;
+            color: white;
+            height: 32px;
+            background: linear-gradient(88.43deg, #1288E8 11.5%, #0097E8 76.7%);
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .to {
+
+            margin-top: 8px;
+            width: 430px;
+            height: 226px;
+            background: linear-gradient(180deg, rgba(27, 18, 78, 0.2) 0%, #0F0B38 93.37%);
+            box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            padding-left: 32px;
+
+
+            .top {
+                display: flex;
+                padding-top: 40px;
+                justify-content: space-between;
+                align-items: center;
+                padding-bottom: 39px;
+
+                .left {
+                    gap: 5px;
+                    display: flex;
+                }
+            }
+
+            #inp {
+                width: 357px;
+                height: 35px;
+                background-color: #32395E;
+                border-radius: 5px;
+                margin-right: 36px;
+            }
+
+            .bit {
+                width: 88px;
+                height: 88px;
+
+            }
+
+        }
+
+        background: radial-gradient(46.41% 73.99% at 46.63% 48.05%, #20135C 0%, #140739 92.82%)
     }
     #Market {
         background-color: grey;
