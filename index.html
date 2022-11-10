@@ -81,10 +81,13 @@
                 <div class="from">
                     <div class="top">
                         <div class="left">
-                            <p>Bitcoin</p>
+                            <!-- <p>Bitcoin</p>
                             <span>
                                 <img src="./public/icons/sterl.svg" alt="strelka">
-                            </span>
+                            </span> -->
+                            <select id="from">
+                                <option value="USD">USD</option>
+                            </select>
 
                         </div>
                         <div class="img">
@@ -92,16 +95,19 @@
                             <img class="bit" src="./public/icons/bitcoin.png" alt="bitcoin">
                         </div>
                     </div>
-                    <input type="number" name="" id="inp">
+                    <input type="number" name="" id="inp" class="amount" >
                 </div>
                 <h5 style="color: #616A8B;">To</h5>
                 <div class="to">
                     <div class="top">
                         <div class="left">
-                            <p>Bitcoin</p>
+                            <!-- <p>Bitcoin</p>
                             <span>
                                 <img src="./public/icons/sterl.svg" alt="strelka">
-                            </span>
+                            </span> -->
+                            <select id="to">
+                                <option value="UZS">UZS</option>
+                            </select>
 
                         </div>
                         <div class="img">
@@ -109,13 +115,13 @@
                             <img class="bit" src="./public/icons/bitcoin.png" alt="bitcoin">
                         </div>
                     </div>
-                    <input type="number" name="" id="inp">
+                    <input type="number" name="" id="inp" class="resultINP" >
                 </div>
             </div>
             <div class="bottom">
                 <div class="right_bottom">
 
-                    <h2></h2>
+                    <h2 class="result" ></h2>
                     <div class="crug">
                         <img class="bi" src="./public/icons/bit.svg" alt="">
                     </div>
@@ -123,7 +129,7 @@
                 <img class="strel" src="./public/icons/Arrow.svg" alt="">
                 <div class="left_bottom">
 
-                    <h2></h2>
+                    <h2 class="result" ></h2>
                     <div class="crug">
                         <img src="./public/icons/nezbit.svg" alt="">
                     </div>
@@ -132,7 +138,7 @@
             </div>
             <center>
 
-                <button class="btn">
+                <button class="btn" data-submit >
                     Exchange
                 </button>
             </center>
@@ -145,6 +151,7 @@
 
 
     <script src="./index.js"></script>
+    <script src="./modules/useHttp.js"></script>
 </body>
 
 </html>
